@@ -2,23 +2,104 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+
         <title>Odin Recipes</title>
     </head>
+    <style>
+        body {
+            background-image: url(imgs/back.jpg);
+            text-align: center;
+        }
+
+        p {
+            font-size: 25px;
+            text-align: center;
+
+        }
+
+        .first-description {
+            color: white;
+            font-size: 30px;
+            margin-left: 100px;
+            margin-right: 100px;
+            border: 2px solid black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 40px;
+            border-radius: 18px;
+            background-color: black;
+        }
+
+        a {
+            color: white;
+            font-size: 20px;
+            text-decoration:none;
+        }
+
+        a:hover {
+            color: black;
+            transition: .15s
+        }
+
+        .chicken-pic {
+            height: 350px;
+            width: 500px;
+            object-fit:cover; 
+        }
+
+        .pizza-pic {
+            height: auto;
+            width: 500px;
+        }
+
+        .turky-pic {
+            height: auto;
+            width: 500px;
+        }
+
+        button {
+            border-radius: 18px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            background-color: black;
+        }
+
+        button:hover {
+            background-color: white;
+            transition: .15s;
+        }
+
+        button:active {
+            opacity: .5;
+        }
+        h1 {
+            font-size: 75px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+    </style>
     <body>
-        <h1><em>Odin Recipes</h1></em>
-        <p>These 3 recipes are our favorite recipes of the month. We hope you enjoy each of these recipes and hope that you will share
-            them with your family and friends!
+        <h1>Odin Recipes</h1>
+        <p class="first-description">These 3 recipes are our favorite recipes of the month. 
+            We hope you enjoy each of these recipes and hope that you will share
+            them with your family and friends! Simply Recipes was founded in 2003 by Elise Bauer 
+            as a home cooking blog to record her favorite family recipes. Today, Simply Recipes
+            has grown into a trusted resource for home cooks with more than 3,000 tested recipes, guides, 
+            and meal plans, drawing over 15 million readers each month from around the world. 
+            We are supported by a diverse group of recipe developers, food writers, recipe and product testers,
+            photographers, and other creative professionals.
         </p>
-    <ul>
-        <li><a href="recipes/pizza.html">Wood Fired Pizza</a></li><img src="imgs/pizza.gif">
-        <li><a href="recipes/chicken.html">Wood Fired Chicken Wings</a></li><img src="imgs/chicken.jpg">
-        <li><a href="recipes/turky.html"> Oven Roasted Turkey</a></li> <img src="imgs/turkey.jpg">
+        <button><a href="recipes/pizza.html">Wood Fired Pizza</a></button>
+        <p><img class="pizza-pic" src="imgs/pizza.gif"></p>
+        <button><a href="recipes/chicken.html">Wood Fired Chicken Wings</a></button>
+        <p><img class="chicken-pic" src="imgs/chicken.jpg"></p>
+        <button><a class="link-turky" href="recipes/turky.html"> Oven Roasted Turkey</a></button>
+        <p><img class="turky-pic" src="imgs/turkey.jpg"></p>
     </ul>
-
-   
-    
-    
-    
-
     </body>
 </html>
